@@ -1,7 +1,7 @@
 {
   "name": "dictionary_app",
   "version": "0.1.0",
-  "homepage": "https://RakeshDP.github.io/Dictionary_Web_Apps",
+  "homepage": "https://RakeshDP.github.io/Dictionary_Web_App",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -20,8 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
