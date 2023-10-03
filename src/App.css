@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(230, 227, 227);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active {
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:active {
+  color: red;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 10px 40px;
+}
+
+.nav-link {
+  display: flex;
+  gap: 30px;
+}
+
+.home {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.word {
+  width: 97vw;
+  padding: 10px;
+  background-color: white;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 400px) {
+  .navbar {
+    justify-content: center;
+    padding:10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar,
+  .nav-link {
+    gap: 20px; /* Apply gap to .navbar and .nav-link */
+  }
+
+  .nav-link {
+    gap: 10px; /* Adjust gap for .nav-link */
   }
 }
